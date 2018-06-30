@@ -1,0 +1,210 @@
+/*INDEX INICIO*/
+body { 
+    margin: 0;
+    padding: 0;
+    }
+
+
+/*STILE LOGN*/
+.login-box{
+    width: 400px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding:  70px 30px; 
+}
+.login-box .avatar{
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+.login-box h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.login-box label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"],
+.login-box input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #637CFF;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login-box input[type="submit"]:hover{
+    background-color: #fff;
+    color: #000;
+}
+.login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+.login-box a:hover{
+    color: #fff;
+}
+
+/*STILE REG*/
+.login-reg{
+    width: 400px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 300px 30px; 
+}
+.login-reg .avatar{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+.login-reg h1{
+    margin: -60% 0px 0px 0px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.login-reg label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+.login-reg input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-reg input[type="text"],
+.login-reg input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-reg input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #637CFF;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login-reg input[type="submit"]:hover{
+    background-color: #fff;
+    color: #000;
+}
+.login-reg a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+.login-reg a:hover{
+    color: #fff;
+}
+    select {
+     background: transparent;
+     border: none;
+     font-size: 14px;
+     height: 30px;
+     padding: 5px;
+     width: 250px;
+     
+  }
+select:focus{ outline: none;}
+/*MEDIA SCREEN DE LOG */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .login-box{
+        width: 380px;
+
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 779px){
+        .login-box{
+        width: 350px;
+        max-height: 70%;
+    }
+}
+/*Y REG */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .login-reg{
+        width: 400px;
+        max-height: 400px; 
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 779px){
+        .login-reg{
+        width: 400px;
+
+    }
+    .login-reg h1{
+        margin: -59.8% 0px 0px 0px;
+    }
+
+}
+/*NAV ADMIN*/
+@media (max-width: 768px){
+
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background: #818181;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+}
